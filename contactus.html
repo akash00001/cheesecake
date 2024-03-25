@@ -1,98 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Contact V1</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-    <meta name="robots" content="noindex, follow">
-    <script
-        nonce="7351845d-f8d6-4b94-9eeb-9645ff1313b5">try { (function (w, d) { !function (lD, lE, lF, lG) { lD[lF] = lD[lF] || {}; lD[lF].executed = []; lD.zaraz = { deferred: [], listeners: [] }; lD.zaraz.q = []; lD.zaraz._f = function (lH) { return async function () { var lI = Array.prototype.slice.call(arguments); lD.zaraz.q.push({ m: lH, a: lI }) } }; for (const lJ of ["track", "set", "debug"]) lD.zaraz[lJ] = lD.zaraz._f(lJ); lD.zaraz.init = () => { var lK = lE.getElementsByTagName(lG)[0], lL = lE.createElement(lG), lM = lE.getElementsByTagName("title")[0]; lM && (lD[lF].t = lE.getElementsByTagName("title")[0].text); lD[lF].x = Math.random(); lD[lF].w = lD.screen.width; lD[lF].h = lD.screen.height; lD[lF].j = lD.innerHeight; lD[lF].e = lD.innerWidth; lD[lF].l = lD.location.href; lD[lF].r = lE.referrer; lD[lF].k = lD.screen.colorDepth; lD[lF].n = lE.characterSet; lD[lF].o = (new Date).getTimezoneOffset(); if (lD.dataLayer) for (const lQ of Object.entries(Object.entries(dataLayer).reduce(((lR, lS) => ({ ...lR[1], ...lS[1] })), {}))) zaraz.set(lQ[0], lQ[1], { scope: "page" }); lD[lF].q = []; for (; lD.zaraz.q.length;) { const lT = lD.zaraz.q.shift(); lD[lF].q.push(lT) } lL.defer = !0; for (const lU of [localStorage, sessionStorage]) Object.keys(lU || {}).filter((lW => lW.startsWith("_zaraz_"))).forEach((lV => { try { lD[lF]["z_" + lV.slice(7)] = JSON.parse(lU.getItem(lV)) } catch { lD[lF]["z_" + lV.slice(7)] = lU.getItem(lV) } })); lL.referrerPolicy = "origin"; lL.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(lD[lF]))); lK.parentNode.insertBefore(lL, lK) };["complete", "interactive"].includes(lE.readyState) ? zaraz.init() : lD.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
 </head>
-
 <body>
-    <div class="contact1">
-        <div class="container-contact1">
-            <div class="contact1-pic js-tilt" data-tilt>
-                <img src="images/img-01.png" alt="IMG">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-            <form class="contact1-form validate-form">
-                <span class="contact1-form-title">
-                    Get in touch
-                </span>
-                <div class="wrap-input1 validate-input" data-validate="Name is required">
-                    <input class="input1" type="text" name="name" placeholder="Name">
-                    <span class="shadow-input1"></span>
-                </div>
-                <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input1" type="text" name="email" placeholder="Email">
-                    <span class="shadow-input1"></span>
-                </div>
-                <div class="wrap-input1 validate-input" data-validate="Subject is required">
-                    <input class="input1" type="text" name="subject" placeholder="Subject">
-                    <span class="shadow-input1"></span>
-                </div>
-                <div class="wrap-input1 validate-input" data-validate="Message is required">
-                    <textarea class="input1" name="message" placeholder="Message"></textarea>
-                    <span class="shadow-input1"></span>
-                </div>
-                <div class="container-contact1-form-btn">
-                    <button class="contact1-form-btn">
-                        <span>
-                            Send Email
-                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </span>
-                    </button>
-                </div>
-            </form>
-        </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
     </div>
-
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="vendor/select2/select2.min.js"></script>
-
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-    <script>
-        $('.js-tilt').tilt({
-            scale: 1.1
-        })
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-23581568-13');
-    </script>
-
-    <script src="js/main.js"></script>
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
-        integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
-        data-cf-beacon='{"rayId":"8697642e1fd140fc","version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
-        crossorigin="anonymous"></script>
 </body>
-
 </html>
+
+
+
