@@ -209,6 +209,7 @@ footer {
 body {
     background-color: #a84db2!important;
     background: #a84db2!important;
+    overflow-x: hidden;
 }
 
 .card {
@@ -227,4 +228,10 @@ body {
 a {
     text-decoration: none!important;
     color: white!important;
+}
+
+.cakes img {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
 }
