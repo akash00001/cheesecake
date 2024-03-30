@@ -189,9 +189,42 @@ h4 {
 }
 
 footer {
-    padding: 1rem;
     background-color: black;
     color: white;
     text-align: center;
 }
 
+.navbar, .bg-dark {
+    background-color: #57B24D!important;
+}
+
+footer > section:nth-child(1) {
+    background-color: #57B24D!important;
+}
+
+footer {
+    background-color: #53a14b!important;
+}
+
+body {
+    background-color: #a84db2!important;
+    background: #a84db2!important;
+}
+
+.card {
+    background-color: #a84db2!important;
+    color: white!important;
+}
+
+.text-primary {
+    color: white;
+}
+
+* {
+    color: white;
+}
+
+a {
+    text-decoration: none!important;
+    color: white!important;
+}
