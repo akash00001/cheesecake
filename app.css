@@ -194,6 +194,12 @@ footer {
     text-align: center;
 }
 
+.btn-primary {
+    background-color: #57B24D!important;
+    color: white;
+    border-color: #57B24D!important;
+}
+
 .navbar, .bg-dark {
     background-color: #57B24D!important;
 }
